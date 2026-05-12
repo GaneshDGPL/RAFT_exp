@@ -1,0 +1,102 @@
+# --- Secrets & environment ---------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+build/
+dist/
+*.egg-info/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Virtual environments ----------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.env-*/
+
+# --- Jupyter -----------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- OS / IDE ----------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs --------------------------------------------------------------------
+*.log
+logs/
+
+# --- Project data (large; not pushed to GitHub) ------------------------------
+# Source PDFs / scraped raw data
+downloads/
+journal_downloads/
+*.pdf
+
+# Chunked / processed data (keep notebooks/scripts, ignore CSV/pickle data)
+chunk_data/*.csv
+chunk_data/embeddings/
+chunk_data_with_chunk_id.csv
+
+# Embeddings & FAISS indexes
+*.index
+*.pkl
+*.pickle
+
+# Generated CSV / JSON artifacts
+scraped_data*.csv
+detailed_scraping_results.json
+enrichment_data*.csv
+final_combination_results*.csv
+data_with_enhanced_rag.csv
+enhanced_rag_results.json
+chunk_embeddings_metadata*.csv
+english_similar_chunks_*.csv
+english_similar_chunks_*.json
+hindi_similar_chunks_*.csv
+hindi_similar_chunks_*.json
+filtered_combinations_for_qa.json
+
+# Search & evaluation results
+search_results/
+overlap_analysis_report.json
+faiss_detailed_analysis_report.json
+fast_overlap_analysis_sample_1000.json
+prompt_based_qa_analysis_results.json
+prompt_based_qa_report.txt
+qa_quality_analysis_results.json
+qa_quality_report.txt
+qa_quality_scores.csv
+
+# RAG test outputs (keep notebook, ignore generated CSVs)
+rag_test/*.csv
+
+# Eval outputs (keep notebook + script, ignore generated reports)
+run_eval/enhanced_category_wise_evaluation_*.csv
+run_eval/enhanced_category_wise_evaluation_*.json
+
+# Visualization images
+*.png
